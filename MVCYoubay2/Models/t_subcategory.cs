@@ -18,6 +18,9 @@ namespace MVCYoubay2.Models
 
         public virtual ICollection<t_product> t_product { get; set; }
 
+
+
+
         public Nullable<long> category_categoryId { get; set; }
 
         public string assistantAvatarImage { get; set; }

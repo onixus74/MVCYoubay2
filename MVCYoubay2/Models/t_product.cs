@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.ComponentModel.DataAnnotations;
 
 namespace MVCYoubay2.Models
@@ -28,13 +29,15 @@ namespace MVCYoubay2.Models
         public int quantityAvailable { get; set; }
         public string productIWmage { get; set; }
 
+        //public Nullable<long> seller_youBayUserId { get; set; }
+
+        public virtual ApplicationUser Seller { get; set; }
 
 
 
         public Nullable<bool> isDisabledByAdmin { get; set; }
         public Nullable<bool> isDisabledBySeller { get; set; }
         public string subcategoryAttributesAndValues { get; set; }
-        public Nullable<long> seller_youBayUserId { get; set; }
         public virtual ICollection<t_auction> t_auction { get; set; }
         public virtual ICollection<t_customizedads> t_customizedads { get; set; }
         public virtual ICollection<t_historyofviews> t_historyofviews { get; set; }
