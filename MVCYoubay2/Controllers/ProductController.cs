@@ -69,7 +69,7 @@ namespace MVCYoubay2.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "productId,productName,productDescription,sellerPrice,subcategory_subcategoryId,quantityAvailable,productIWmage,isDisabledByAdmin,isDisabledBySeller,subcategoryAttributesAndValues,seller_youBayUserId")] t_product t_product)
+        public async Task<ActionResult> Create([Bind(Include = "productId,productName,productDescription,sellerPrice,subcategory_subcategoryId,quantityAvailable,productImage,isDisabledByAdmin,isDisabledBySeller,subcategoryAttributesAndValues,seller_youBayUserId")] t_product t_product)
         {
             if (ModelState.IsValid)
             {
@@ -102,7 +102,7 @@ namespace MVCYoubay2.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "productId,productName,productDescription,sellerPrice,subcategory_subcategoryId,quantityAvailable,productIWmage,isDisabledByAdmin,isDisabledBySeller,subcategoryAttributesAndValues,seller_youBayUserId")] t_product t_product)
+        public async Task<ActionResult> Edit([Bind(Include = "productId,productName,productDescription,sellerPrice,subcategory_subcategoryId,quantityAvailable,productImage,isDisabledByAdmin,isDisabledBySeller,subcategoryAttributesAndValues,seller_youBayUserId")] t_product t_product)
         {
             if (ModelState.IsValid)
             {

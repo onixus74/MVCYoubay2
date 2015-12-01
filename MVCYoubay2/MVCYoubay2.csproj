@@ -319,12 +319,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\css\" />
     <Folder Include="Content\img\CollectiblesArt\" />
     <Folder Include="Content\img\Electronics\Cameras\" />
     <Folder Include="Content\img\Electronics\Phones\" />
     <Folder Include="Content\img\Fashion\KidsBaby\" />
     <Folder Include="Content\img\Fashion\Men\" />
     <Folder Include="Content\img\Fashion\Women\" />
+    <Folder Include="Scripts\js\" />
+    <Folder Include="Scripts\vendor\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Scripts/vendor/bootstrap/css/bootstrap.css")
+    @Styles.Render("~/Scripts/vendor/font-awesome/css/font-awesome.css")
+    @Styles.Render("~/Scripts/vendor/simple-line-icons/css/simple-line-icons.css")
+    @Styles.Render("~/Scripts/vendor/owl.carousel/assets/owl.carousel.min.css")
+    @Styles.Render("~/Scripts/vendor/owl.carousel/assets/owl.theme.default.min.css")
+    @Styles.Render("~/Scripts/vendor/magnific-popup/magnific-popup.css")
+
+    @Styles.Render("~/Content/css/theme.css")
+    @Styles.Render("~/Content/css/theme-elements.css")
+    @Styles.Render("~/Content/css/theme-blog.css")
+    @Styles.Render("~/Content/css/theme-shop.css")
+    @Styles.Render("~/Content/css/theme-animate.css")
+
+    @Styles.Render("~/Content/css/skins/default.css")
+    @Styles.Render("~/Content/css/custom.css")
+    
+
+
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
@@ -39,6 +57,28 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+
+
+    @Scripts.Render("~/bundles/vendor/jquery/jquery.js")
+    @Scripts.Render("~/bundles/vendor/jquery.appear/jquery.appear.js")
+    @Scripts.Render("~/bundles/vendor/jquery.easing/jquery.easing.js")
+    @Scripts.Render("~/bundles/vendor/jquery-cookie/jquery-cookie.js")
+    @Scripts.Render("~/bundles/vendor/bootstrap/js/bootstrap.js")
+    @Scripts.Render("~/bundles/vendor/common/common.js")
+    @Scripts.Render("~/bundles/vendor/jquery.validation/jquery.validation.js")
+    @Scripts.Render("~/bundles/vendor/jquery.stellar/jquery.stellar.js")
+    @Scripts.Render("~/bundles/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.js")
+    @Scripts.Render("~/bundles/vendor/jquery.gmap/jquery.gmap.js")
+    @Scripts.Render("~/bundles/vendor/jquery.lazyload/jquery.lazyload.js")
+    @Scripts.Render("~/bundles/vendor/isotope/jquery.isotope.js")
+    @Scripts.Render("~/bundles/vendor/owl.carousel/owl.carousel.js")
+    @Scripts.Render("~/bundles/vendor/magnific-popup/jquery.magnific-popup.js")
+    @Scripts.Render("~/bundles/vendor/vide/vide.js")
+    @Scripts.Render("~/bundles/js/theme.js")
+    @Scripts.Render("~/bundles/js/custom.js")
+    @Scripts.Render("~/bundles/js/theme.init.js")
+
+
     @RenderSection("scripts", required: false)
 </body>
 </html>
