@@ -81,5 +81,6 @@ namespace MVCYoubay2.Models
         public DbSet<t_specialpromotion> t_specialpromotion { get; set; }
         public DbSet<t_subcategory> t_subcategory { get; set; }
 
+        public System.Data.Entity.DbSet<MVCYoubay2.Models.Cart> Carts { get; set; }
     }
 }

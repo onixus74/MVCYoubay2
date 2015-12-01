@@ -27,9 +27,9 @@ namespace MVCYoubay2.Models
         public virtual t_subcategory t_subcategory { get; set; }
 
         public int quantityAvailable { get; set; }
-        public string productIWmage { get; set; }
+        public string productImage { get; set; }
 
-        //public Nullable<long> seller_youBayUserId { get; set; }
+        public Nullable<long> seller_youBayUserId { get; set; }
 
         public virtual ApplicationUser Seller { get; set; }
 

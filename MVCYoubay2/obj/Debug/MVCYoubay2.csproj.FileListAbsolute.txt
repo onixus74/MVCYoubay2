@@ -71,3 +71,9 @@ C:\Users\onixus74\Desktop\Study\Fusion\Pidev\MVCYoubay\MVCYoubay2\MVCYoubay2\bin
 C:\Users\onixus74\Desktop\Study\Fusion\Pidev\MVCYoubay\MVCYoubay2\MVCYoubay2\bin\IdentityManager.pdb
 C:\Users\onixus74\Desktop\Study\Fusion\Pidev\MVCYoubay\MVCYoubay2\MVCYoubay2\bin\IdentityManager.AspNetIdentity.dll
 C:\Users\onixus74\Desktop\Study\Fusion\Pidev\MVCYoubay\MVCYoubay2\MVCYoubay2\bin\IdentityManager.AspNetIdentity.pdb
+C:\Users\onixus74\Desktop\Study\Fusion\Pidev\MVCYoubay\MVCYoubay2\MVCYoubay2\obj\Debug\MVCYoubay2.Migrations.InitialCreate.resources
+C:\Users\onixus74\Desktop\Study\Fusion\Pidev\MVCYoubay\MVCYoubay2\MVCYoubay2\obj\Debug\MVCYoubay2.csproj.GenerateResource.Cache
+C:\Users\onixus74\Desktop\Study\Fusion\Pidev\MVCYoubay\MVCYoubay2\MVCYoubay2\obj\Debug\MVCYoubay2.Migrations.Product1.resources
+C:\Users\onixus74\Desktop\Study\Fusion\Pidev\MVCYoubay\MVCYoubay2\MVCYoubay2\obj\Debug\MVCYoubay2.Migrations.Product2.resources
+C:\Users\onixus74\Desktop\Study\Fusion\Pidev\MVCYoubay\MVCYoubay2\MVCYoubay2\obj\Debug\MVCYoubay2.Migrations.Product3.resources
+C:\Users\onixus74\Desktop\Study\Fusion\Pidev\MVCYoubay\MVCYoubay2\MVCYoubay2\obj\Debug\MVCYoubay2.Migrations.Category1.resources

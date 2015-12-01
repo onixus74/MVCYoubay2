@@ -15,5 +15,7 @@ namespace MVCYoubay2.Models
         public Nullable<int> categoryDisplayPriority { get; set; }
         public string categoryName { get; set; }
         public virtual ICollection<t_subcategory> t_subcategory { get; set; }
+
+        public virtual ICollection<t_product> Products { get; set; }
     }
 }
