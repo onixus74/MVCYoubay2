@@ -25,6 +25,11 @@ namespace MVCYoubay2.Controllers
             UserManager = userManager;
             SignInManager = signInManager;
         }
+
+        public CartsController()
+        {
+
+        }
         public ApplicationSignInManager SignInManager
         {
             get
@@ -81,7 +86,7 @@ namespace MVCYoubay2.Controllers
 
         [HttpPost]
         [AllowAnonymous]
-        public ActionResult PlusProduit(int? id)
+        public ActionResult PlusProduct(int? id)
         {
             if (id == null)
             {

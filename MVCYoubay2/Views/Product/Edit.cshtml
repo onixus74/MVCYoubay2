@@ -44,7 +44,8 @@
         <div class="form-group">
             @Html.LabelFor(model => model.subcategory_subcategoryId, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.subcategory_subcategoryId, new { htmlAttributes = new { @class = "form-control" } })
+                @*@Html.EditorFor(model => model.subcategory_subcategoryId, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.DropDownList("subcategory_subcategoryId", String.Empty)
                 @Html.ValidationMessageFor(model => model.subcategory_subcategoryId, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -53,6 +54,7 @@
             @Html.LabelFor(model => model.quantityAvailable, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.quantityAvailable, new { htmlAttributes = new { @class = "form-control" } })
+                
                 @Html.ValidationMessageFor(model => model.quantityAvailable, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -62,42 +64,6 @@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.productImage, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.productImage, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.isDisabledByAdmin, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                <div class="checkbox">
-                    @Html.EditorFor(model => model.isDisabledByAdmin)
-                    @Html.ValidationMessageFor(model => model.isDisabledByAdmin, "", new { @class = "text-danger" })
-                </div>
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.isDisabledBySeller, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                <div class="checkbox">
-                    @Html.EditorFor(model => model.isDisabledBySeller)
-                    @Html.ValidationMessageFor(model => model.isDisabledBySeller, "", new { @class = "text-danger" })
-                </div>
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.subcategoryAttributesAndValues, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.subcategoryAttributesAndValues, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.subcategoryAttributesAndValues, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.seller_youBayUserId, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.seller_youBayUserId, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.seller_youBayUserId, "", new { @class = "text-danger" })
             </div>
         </div>
 

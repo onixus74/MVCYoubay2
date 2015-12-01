@@ -16,9 +16,10 @@ namespace MVCYoubay2.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Product
-        public async Task<ActionResult> Index()
+        public  ViewResult Index()
         {
-            return View(await db.t_product.ToListAsync());
+            var products = db.t_product.Include(a => a.t_subcategory);
+            return View(products.ToList());
         }
 
         public ActionResult ListForManager()
@@ -42,9 +43,24 @@ namespace MVCYoubay2.Controllers
             return View(t_product);
         }
 
+        public async Task<ActionResult> DetailsForUser(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            t_product products = await db.t_product.FindAsync(id);
+            if (products == null)
+            {
+                return HttpNotFound();
+            }
+            return View(products);
+        }
+
         // GET: Product/Create
         public ActionResult Create()
         {
+            ViewBag.subcategory_subcategoryId = new SelectList(db.t_subcategory, "subcategoryId", "categoryName");
             return View();
         }
 
@@ -59,9 +75,9 @@ namespace MVCYoubay2.Controllers
             {
                 db.t_product.Add(t_product);
                 await db.SaveChangesAsync();
-                return RedirectToAction("Index");
+                return RedirectToAction("ListForManager");
             }
-
+            ViewBag.subcategory_subcategoryId = new SelectList(db.t_subcategory, "subcategoryId", "categoryName" , t_product.subcategory_subcategoryId);
             return View(t_product);
         }
 
@@ -77,6 +93,7 @@ namespace MVCYoubay2.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.subcategory_subcategoryId = new SelectList(db.t_subcategory, "subcategoryId", "categoryName", t_product.subcategory_subcategoryId);
             return View(t_product);
         }
 
@@ -93,6 +110,7 @@ namespace MVCYoubay2.Controllers
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
+            ViewBag.subcategory_subcategoryId = new SelectList(db.t_subcategory, "subcategoryId", "categoryName", t_product.subcategory_subcategoryId);
             return View(t_product);
         }
 

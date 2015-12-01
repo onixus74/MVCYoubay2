@@ -29,18 +29,7 @@
         <th>
             @Html.DisplayNameFor(model => model.productImage)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.isDisabledByAdmin)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.isDisabledBySeller)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.subcategoryAttributesAndValues)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.seller_youBayUserId)
-        </th>
+        
         <th></th>
     </tr>
 
@@ -63,18 +52,6 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.productImage)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.isDisabledByAdmin)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.isDisabledBySeller)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.subcategoryAttributesAndValues)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.seller_youBayUserId)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.productId }) |

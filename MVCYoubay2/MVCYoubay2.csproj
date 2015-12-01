@@ -234,6 +234,9 @@
     <Content Include="Content\img\Electronics\Computers\alienwarem18.jpg" />
     <Content Include="Content\img\Electronics\Computers\asusg74sx.jpg" />
     <Content Include="Content\img\Electronics\Computers\macbookpro.jpg" />
+    <Content Include="Content\img\icon\add.png" />
+    <Content Include="Content\img\icon\delet.png" />
+    <Content Include="Content\img\icon\moin.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -307,6 +310,11 @@
     <Content Include="Views\Category\Edit.cshtml" />
     <Content Include="Views\Category\Index.cshtml" />
     <Content Include="Views\Home\ListProductByCategory.cshtml" />
+    <Content Include="Views\Home\ListSubcategories.cshtml" />
+    <Content Include="Views\Home\ListCategories.cshtml" />
+    <Content Include="Views\Product\DetailsForUser.cshtml" />
+    <Content Include="Views\Product\ListForManager.cshtml" />
+    <Content Include="Views\Carts\AddProduct.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,62 @@
+﻿
+@model MVCYoubay2.Models.t_product
+@{
+    ViewBag.Title = "DetailsForUser";
+}
+
+<div>
+    <h1>Produit : @Html.DisplayFor(model => model.productName)</h1>
+    <hr />
+    <img src="/@Model.productImage" alt="Computer Man" style="width:250px;height:200px">
+    <br /><br />
+    <table class="table" align="center">
+
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.productName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.productDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sellerPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.subcategory_subcategoryId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.quantityAvailable)
+            </th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.productName)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.productDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.sellerPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.subcategory_subcategoryId)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.quantityAvailable)
+            </td>
+        </tr>
+
+    </table>
+</div>
+<p>
+    @Html.ActionLink("Accueil", "Index", "Home")
+
+<p class="button">
+    @Html.ActionLink("Ajouter au panier", "AjouterProduit", "Panier", new { id = @Model.productId }, "")
+</p>
+
+</p>
+
+

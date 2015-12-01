@@ -30,6 +30,20 @@ namespace MVCYoubay2.Controllers
             return View();
         }
 
+        public ActionResult ListSubcategories()
+        {
+            var Catg = db.t_subcategory.ToList();
+            return View(Catg); ;
+        }
+
+        public ActionResult ListCategories()
+        {
+            var list = db.t_category.ToList();
+            return View(list); ;
+        }
+
+
+
         public ActionResult ListProductByCategory(string Category)
         {
             var ProductList = db.t_category.Include("Products")

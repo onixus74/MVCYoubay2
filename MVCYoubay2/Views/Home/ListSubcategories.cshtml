@@ -1,0 +1,19 @@
+﻿
+@model IEnumerable<MVCYoubay2.Models.t_subcategory>
+
+@{
+    ViewBag.Title = "Index";
+    <br /><br /><br /><br /><br /><br />
+}
+@foreach (var subcategory in Model)
+{
+    <div class=" col-md-3 col-sm-4">
+        <div class="thumbnail">
+            <div class="caption">
+                <center>
+                    <a href="/Home/listerProduitCategorie?categorie=@subcategory.categoryName" class="btn btn-primary" role="button">@subcategory.categoryName</a>
+                </center>
+            </div>
+        </div>
+    </div>
+}

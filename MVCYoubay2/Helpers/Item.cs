@@ -9,7 +9,7 @@ namespace MVCYoubay2.Helpers
     public class Item
     {
         public int Quantity { get; set; }
-        private int _ProduitId;
+        private int productId;
 
         public t_product Product = null;
         public t_product Prod

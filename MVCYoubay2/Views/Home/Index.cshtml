@@ -39,9 +39,9 @@
             <img src="@Product.productImage" alt="Computer Man" style="width:250px;height:250px">
             <div class="caption">
                 <center>
-                    <a href="/Produit/DetailsForUser/@Product.productId" class="btn btn-primary" role="button">Details »</a>
+                    <a href="/Product/DetailsForUser/@Product.productId" class="btn btn-primary" role="button">Details »</a>
                     <h5>Price : @Product.sellerPrice</h5>
-                    @Html.ActionLink("Add to Cart »", "AddProduct", "Cart", new { id = @Product.productId }, "")
+                    @Html.ActionLink("Add to Cart »", "AddProduct", "Carts", new { id = @Product.productId }, "")
                 </center>
             </div>
         </div>
