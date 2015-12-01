@@ -315,6 +315,7 @@
     <Content Include="Views\Product\DetailsForUser.cshtml" />
     <Content Include="Views\Product\ListForManager.cshtml" />
     <Content Include="Views\Carts\AddProduct.cshtml" />
+    <Content Include="Views\Carts\CheckOut.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
